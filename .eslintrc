@@ -1,0 +1,74 @@
+{
+  "env": { "browser": true, "node": true, "es6": true },
+  "ignorePatterns": ["node_modules", "**/*.json", "build", "dist"],
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:@typescript-eslint/eslint-recommended"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "react/prop-types": "off",
+    "react/jsx-wrap-multilines": "warn",
+    "semi": "warn",
+    "no-duplicate-imports": "error",
+    "no-unused-vars": "off",
+    "no-console": "error",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "quotes": [
+      "warn",
+      "double",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "react/no-unknown-property": [
+      "error",
+      {
+        "ignore": [
+          "dispose",
+          "onPointerMissed",
+          "castShadow",
+          "receiveShadow",
+          "geometry",
+          "args",
+          "material",
+          "intensity",
+          "shadow-mapSize",
+          "shadow-camera-near",
+          "shadow-camera-left",
+          "shadow-camera-right",
+          "shadow-camera-top",
+          "shadow-camera-bottom",
+          "shadow-camera-far",
+          "shadow-bias",
+          "attach",
+          "position",
+          "rotation",
+          "position-x",
+          "position-y",
+          "position-z",
+          "rotation-x",
+          "rotation-y",
+          "rotation-z",
+          "map",
+          "normalMap",
+          "normalScale",
+          "roughness",
+          "envMapIntensity",
+          "transparent",
+          "userData",
+          "flatShading",
+          "side",
+          "object",
+          "layers",
+          "scale-z",
+          "material-color"
+        ]
+      }
+    ],
+  }
+}
