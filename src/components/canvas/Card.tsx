@@ -95,6 +95,7 @@ export function Card({ pokemon = "default", artSectionColor, ...props }: CardPro
 
             <mesh
               ref={cardRef}
+              // @ts-expect-error Property 'geometry' is expected to exist
               geometry={nodes.Cube.geometry}
               dispose={null}
               scale={[1, 1, 0.6]}
