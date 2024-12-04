@@ -19,11 +19,11 @@ export default function RoundedPlane({ w, h, r, s }: RoundedPlaneProps) {
   const vl = r / h; // v low
   const vh = (h - r) / h; // v high
 
-  let positions = [wi, hi, 0, -wi, hi, 0, -wi, -hi, 0, wi, -hi, 0];
+  const positions = [wi, hi, 0, -wi, hi, 0, -wi, -hi, 0, wi, -hi, 0];
 
-  let uvs = [ur, vh, ul, vh, ul, vl, ur, vl];
+  const uvs = [ur, vh, ul, vh, ul, vl, ur, vl];
 
-  let n = [
+  const n = [
     3 * (s + 1) + 3,
     3 * (s + 1) + 4,
     s + 4,
@@ -38,7 +38,7 @@ export default function RoundedPlane({ w, h, r, s }: RoundedPlaneProps) {
     0,
   ];
 
-  let indices = [
+  const indices = [
     n[0],
     n[1],
     n[2],
@@ -59,7 +59,7 @@ export default function RoundedPlane({ w, h, r, s }: RoundedPlaneProps) {
     n[11],
   ];
 
-  let phi: number, cos: number, sin: number, xc: number, yc: number, uc: number, vc: number, idx: number;
+  const phi: number, cos: number, sin: number, xc: number, yc: number, uc: number, vc: number, idx: number;
 
   for (let i = 0; i < 4; i++) {
     xc = i < 1 || i > 2 ? wi : -wi;
@@ -111,8 +111,8 @@ export function RoundEdgedBox({ w, h, t, r, s }: RoundEdgedBoxProps) {
   const w2 = w / 2; // half width
   const h2 = h / 2; // half height
 
-  let ul = r / w; // u left front side
-  let ur = (w - r) / w; // u right front side
+  const ul = r / w; // u left front side
+  const ur = (w - r) / w; // u right front side
   const vl = r / h; // v low
   const vh = (h - r) / h; // v high
 
@@ -127,8 +127,8 @@ export function RoundEdgedBox({ w, h, t, r, s }: RoundEdgedBoxProps) {
     cosb: number,
     sinb: number;
 
-  let positions = [];
-  let uvs = [];
+  const positions = [];
+  const uvs = [];
 
   // for front side
   let t2 = t / 2; // +  half thick

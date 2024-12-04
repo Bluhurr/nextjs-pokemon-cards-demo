@@ -1,4 +1,6 @@
 // @ts-nocheck
+/* eslint-disable react/no-unknown-property */
+
 import * as THREE from "three";
 import { extend, useFrame } from "@react-three/fiber";
 import { shaderMaterial } from "@react-three/drei";

@@ -1,4 +1,5 @@
 // @ts-nocheck
+/* eslint-disable react/no-unknown-property */
 
 import { useRef } from "react";
 import { BackSide, Euler } from "three";
