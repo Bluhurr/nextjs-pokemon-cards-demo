@@ -25,6 +25,7 @@
     "@next/bundle-analyzer": "^14.0.4",
     "@types/node": "^20.11.22",
     "@types/react": "^18.2.60",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
     "autoprefixer": "^10.4.16",
     "babel-plugin-glsl": "^1.0.0",
     "eslint": "^8.56.0",
