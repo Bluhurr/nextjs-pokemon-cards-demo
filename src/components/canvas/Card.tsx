@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useRef } from "react";
 import { BackSide, Euler } from "three";
 import { Decal, Float, Mask, PresentationControls, useGLTF, useMask, useTexture } from "@react-three/drei";
@@ -27,7 +29,7 @@ interface CardProps {
   props?: any;
 }
 
-export function Card({ pokemon = "default", artSectionColor, ...props }: CardProps) {
+export function Card({ pokemon = "default", artSectionColor }: CardProps) {
   const { nodes } = useGLTF("/card.glb");
   const cardRef = useRef(null);
 

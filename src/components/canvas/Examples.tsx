@@ -1,10 +1,9 @@
 "use client";
 
-import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { useMemo, useRef, useState } from "react";
-import { Line, useCursor, MeshDistortMaterial } from "@react-three/drei";
+import { Line, useCursor, MeshDistortMaterial, useGLTF } from "@react-three/drei";
 import { useRouter } from "next/navigation";
 
 export const Blob = ({ route = "/", ...props }) => {
